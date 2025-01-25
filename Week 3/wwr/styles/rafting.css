@@ -1,0 +1,23 @@
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #505033;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 { 
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    color:#CFCFB4;
+}
+p {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    color: #B4CDE4;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
