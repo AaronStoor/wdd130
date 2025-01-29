@@ -16,8 +16,11 @@ p {
     font-weight: 400;
     color: #B4CDE4;
 }
-.hero img {
+.hero-image {
     display: block;
     width: 100%;
     height: auto;
+}
+.hero-text {
+    text-align: center;
 }
