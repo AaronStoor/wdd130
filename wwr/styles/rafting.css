@@ -1,26 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 a {
     text-decoration: none;
 }
 body {
-    background-color: #505033;
-    font-family: "Roboto", serif;
+    color: #505033;
+    background-color: #264969;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
-h1, h2, h3, h4, h5, h6 { 
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    color:#CFCFB4;
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #264969;
 }
-p {
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    color: #B4CDE4;
-}
-.hero-image {
-    display: block;
-    width: 100%;
+header img {
+    width: 100px;
     height: auto;
 }
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+.hero-image img {
+    width: 70%;
+    height: auto;
+    display: block;
+}
+
 .hero-text {
+    padding: 20px;
+    background-color: #cfcfb4;
     text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #b4cde4;
+    margin-bottom: 20px;
+}
+
+.hero-text article {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hero-text article img {
+    width: 70%;
+    height: auto;
+}
+
+section {
+    padding: 40px 20px;
+    background-color:  #cfcfb4;
+    margin-top: 20px;
+}
+h2 {
+    font-size: 28px;
+    color: #b4cde4;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #505033;
+}
+
+section img {
+    width: 70%;
+    height: auto;
+    margin: 10px 0;
+}
+
+section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+footer {
+    background-color: #264969;
+    padding: 20px;
+    text-align: center;
+    color: #505033;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sociallinks a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sociallinks img {
+    width: 70%;
+    height: auto;
+}
+
+footer .sociallinks a:hover {
+    opacity: 0.8;
 }
