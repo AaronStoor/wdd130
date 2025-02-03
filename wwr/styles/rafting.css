@@ -1,137 +1,237 @@
+/* Color Variables for the Color Scheme */
+:root {
+    --primary-color: #505033; /* Primary color */
+    --secondary-color: #264969; /* Secondary color */
+    --accent1-color: #CFCFB4; /* Accent 1 color */
+    --accent2-color: #B4CDE4; /* Accent 2 color */
+}
+
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color); /* Dark blue background */
+}
+
 a {
     text-decoration: none;
+    color: var(--accent1-color); /* Light beige color for links */
+    background-color: var(--secondary-color); /* Dark blue background for links */
 }
-body {
-    color: #505033;
-    background-color: #264969;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-}
+
+
+
+/* Header Styles */
 header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #264969;
-}
-header img {
-    width: 100px;
-    height: auto;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-
-nav {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--secondary-color); /* Dark blue header */
+    color: var(--accent2-color); /* Light blue text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    margin-right: 20px;
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-nav a:last-child {
-    margin-right: 0;
+header img {
+    max-height: 60px;
+    max-width: 100%;
 }
 
-.hero-image img {
-    width: 70%;
-    height: auto;
-    display: block;
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent1-color); /* Light beige text for links */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: var(--accent2-color); /* Light blue on hover */
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: 1fr 1fr; /* Create two equal-width columns */
+    gap: 2rem; /* Add some space between the columns */
+    padding: 3rem 2rem; /* Add padding to space it out */
 }
 
 .hero-text {
-    padding: 20px;
-    background-color: #cfcfb4;
+    display: flex;
+    flex-direction: column; /* Stack text vertically inside the text container */
+    justify-content: center; /* Center text vertically */
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-image img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+
+/* History Section */
+.history {
+    padding: 40px 20px;
+    background: var(--secondary-color); /* Dark blue background */
+    color: var(--accent2-color); /* Light blue text */
     text-align: center;
 }
 
-.hero-text h1 {
+.history h2 {
     font-size: 36px;
-    color: #b4cde4;
+    font-weight: bold;
     margin-bottom: 20px;
+    color: var(--primary-color); /* Muted olive color for the history heading */
 }
 
-.hero-text article {
-    margin-top: 20px;
-    text-align: left;
-}
-
-.hero-text article img {
-    width: 70%;
-    height: auto;
-}
-
-section {
-    padding: 40px 20px;
-    background-color:  #cfcfb4;
-    margin-top: 20px;
-}
-h2 {
-    font-size: 28px;
-    color: #b4cde4;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #505033;
-}
-
-section img {
-    width: 70%;
-    height: auto;
-    margin: 10px 0;
-}
-
-section:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.history-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-footer {
-    background-color: #264969;
+.history-text {
+    flex: 1 1 50%;
+    max-width: 600px;
     padding: 20px;
-    text-align: center;
-    color: #505033;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-footer p {
+.history-image {
+    flex: 1 1 50%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.history-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adventures Section Styles */
+.adventures {
+    padding: 40px 20px; /* Padding around the section */
+    background-color: var(--secondary-color); /* Dark blue background */
+    text-align: center; /* Center the heading */
+}
+
+.adventures h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-color); /* Muted olive color for the heading */
+}
+
+/* Grid Layout for Adventure Images */
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
+    gap: 20px; /* Add space between the grid items */
+    align-items: center; /* Vertically align the content */
+}
+
+/* Style for each figure element */
+.adventure-grid figure {
+    margin: 0;
+    position: relative;
+    border-radius: 8px; /* Rounded corners for the figures */
+    overflow: hidden; /* Ensure the image doesn't overflow the border */
+}
+
+/* Style for the images */
+.adventure-grid img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Keep the image aspect ratio */
+    border-radius: 8px; /* Rounded corners for the images */
+    box-shadow: 0 4px 10px var(--secondary-color); /* Subtle shadow for depth */
+}
+
+/* Style for the captions */
+.adventure-grid figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: var(--secondary-color); /* Semi-transparent background for readability */
+    color: var(--primary-color); /* Muted olive color for captions */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
     margin-bottom: 10px;
 }
 
+/* Footer Styles */
+footer {
+    display: flex; /* Apply Flexbox layout */
+    justify-content: space-between; /* Space between the text and social media links */
+    align-items: center; /* Vertically center the content */
+    padding: 20px; /* Add padding for spacing */
+    background-color: var(--secondary-color); /* Dark blue background color for footer */
+    color: var(--accent2-color); /* Light blue text color */
+    font-size: 14px; /* Small font size for the footer text */
+}
+
+footer p {
+    margin: 0; /* Remove margin from the paragraph */
+}
+
 .sociallinks {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    display: flex; /* Apply Flexbox layout to the social links */
+    justify-content: flex-end; /* Align the icons to the right */
+    gap: 15px; /* Add spacing between the icons */
 }
 
-.sociallinks a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sociallinks a img {
+    width: 30px; /* Set a fixed size for the social media icons */
+    height: 30px; /* Ensure the icons are square */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
-.sociallinks img {
-    width: 70%;
-    height: auto;
-}
-
-footer .sociallinks a:hover {
-    opacity: 0.8;
+.sociallinks a:hover img {
+    transform: scale(1.1); /* Slightly scale the icon on hover for interaction */
 }
