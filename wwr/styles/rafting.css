@@ -1,9 +1,9 @@
 /* Color Variables for the Color Scheme */
 :root {
-    --primary-color: #505033; /* Primary color */
-    --secondary-color: #264969; /* Secondary color */
-    --accent1-color: #CFCFB4; /* Accent 1 color */
-    --accent2-color: #B4CDE4; /* Accent 2 color */
+    --primary-color: #505033;
+    --secondary-color: #264969; 
+    --accent1-color: #CFCFB4; 
+    --accent2-color: #B4CDE4; 
 }
 
 /* General Styles */
@@ -15,13 +15,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--secondary-color); /* Dark blue background */
+    background-color: var(--secondary-color);
 }
 
 a {
     text-decoration: none;
-    color: var(--accent1-color); /* Light beige color for links */
-    background-color: var(--secondary-color); /* Dark blue background for links */
+    color: var(--accent1-color); 
+    background-color: var(--secondary-color); 
 }
 
 
@@ -29,18 +29,18 @@ a {
 /* Header Styles */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 40px;
-    background-color: var(--secondary-color); /* Dark blue header */
-    color: var(--accent2-color); /* Light blue text color */
+    background-color: var(--secondary-color); 
+    color: var(--accent2-color); 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 
@@ -49,14 +49,6 @@ header img {
     max-width: 100%;
 }
 
-header h1 {
-    flex-grow: 1;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
 
 nav ul {
     display: flex;
@@ -71,46 +63,66 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--accent1-color); /* Light beige text for links */
+    color: var(--accent1-color);
     font-size: 16px;
     font-weight: 500;
 }
 
 nav ul li a:hover {
-    color: var(--accent2-color); /* Light blue on hover */
+    color: var(--accent2-color); 
     text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-    display: grid; /* Use CSS Grid layout */
-    grid-template-columns: 1fr 1fr; /* Create two equal-width columns */
-    gap: 2rem; /* Add some space between the columns */
-    padding: 3rem 2rem; /* Add padding to space it out */
+    padding: 40px 20px;
+    color: var(--accent2-color); 
+    text-align: center;
+    background-origin: var(--primary-color);
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--accent1-color);
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .hero-text {
-    display: flex;
-    flex-direction: column; /* Stack text vertically inside the text container */
-    justify-content: center; /* Center text vertically */
+    flex: 1 50%;
+    max-width: 600px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.hero-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.hero-image {
+    flex: 1 50%;
+    max-width: 600px;
+    padding: 10px;
 }
 
 .hero-image img {
-    width: 100%; /* Make the image responsive */
-    border-radius: 8px; /* Rounded corners for the image */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 
 /* History Section */
 .history {
     padding: 40px 20px;
-    background: var(--secondary-color); /* Dark blue background */
-    color: var(--accent2-color); /* Light blue text */
+    color: var(--accent2-color); 
     text-align: center;
 }
 
@@ -118,19 +130,19 @@ nav ul li a:hover {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--primary-color); /* Muted olive color for the history heading */
+    color: var(--accent1-color);
 }
 
 .history-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .history-text {
-    flex: 1 1 50%;
+    flex: 1 1 1;
     max-width: 600px;
     padding: 20px;
     font-size: 18px;
@@ -138,7 +150,6 @@ nav ul li a:hover {
 }
 
 .history-image {
-    flex: 1 1 50%;
     max-width: 600px;
     padding: 20px;
 }
@@ -152,40 +163,40 @@ nav ul li a:hover {
 
 /* Adventures Section Styles */
 .adventures {
-    padding: 40px 20px; /* Padding around the section */
-    background-color: var(--secondary-color); /* Dark blue background */
-    text-align: center; /* Center the heading */
+    padding: 40px 20px; 
+    background-color: var(--secondary-color); 
+    text-align: center; 
 }
 
 .adventures h2 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--primary-color); /* Muted olive color for the heading */
+    color: var(--accent1-color); 
 }
 
 /* Grid Layout for Adventure Images */
 .adventure-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
-    gap: 20px; /* Add space between the grid items */
-    align-items: center; /* Vertically align the content */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    align-items: center;
 }
 
 /* Style for each figure element */
 .adventure-grid figure {
     margin: 0;
     position: relative;
-    border-radius: 8px; /* Rounded corners for the figures */
-    overflow: hidden; /* Ensure the image doesn't overflow the border */
+    border-radius: 8px; 
+    overflow: hidden; 
 }
 
 /* Style for the images */
 .adventure-grid img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Keep the image aspect ratio */
-    border-radius: 8px; /* Rounded corners for the images */
-    box-shadow: 0 4px 10px var(--secondary-color); /* Subtle shadow for depth */
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px var(--secondary-color);
 }
 
 /* Style for the captions */
@@ -194,8 +205,8 @@ nav ul li a:hover {
     bottom: 10px;
     left: 10px;
     right: 10px;
-    background-color: var(--secondary-color); /* Semi-transparent background for readability */
-    color: var(--primary-color); /* Muted olive color for captions */
+    background-color: var(--secondary-color); 
+    color: var(--accent2-color); 
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -207,31 +218,31 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    display: flex; /* Apply Flexbox layout */
-    justify-content: space-between; /* Space between the text and social media links */
-    align-items: center; /* Vertically center the content */
-    padding: 20px; /* Add padding for spacing */
-    background-color: var(--secondary-color); /* Dark blue background color for footer */
-    color: var(--accent2-color); /* Light blue text color */
-    font-size: 14px; /* Small font size for the footer text */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    background-color: var(--secondary-color); 
+    color: var(--accent2-color); 
+    font-size: 14px; 
 }
 
 footer p {
-    margin: 0; /* Remove margin from the paragraph */
+    margin: 0; 
 }
 
 .sociallinks {
-    display: flex; /* Apply Flexbox layout to the social links */
-    justify-content: flex-end; /* Align the icons to the right */
-    gap: 15px; /* Add spacing between the icons */
+    display: flex; 
+    justify-content: flex-end; 
+    gap: 15px; 
 }
 
 .sociallinks a img {
-    width: 30px; /* Set a fixed size for the social media icons */
-    height: 30px; /* Ensure the icons are square */
-    transition: transform 0.3s ease; /* Smooth transition on hover */
+    width: 30px; 
+    height: 30px; 
+    transition: transform 0.3s ease; 
 }
 
 .sociallinks a:hover img {
-    transform: scale(1.1); /* Slightly scale the icon on hover for interaction */
+    transform: scale(1.1); 
 }
