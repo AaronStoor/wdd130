@@ -310,3 +310,164 @@ footer p {
 .form-group .submit-btn:hover {
     background-color: var(--accent2-color);
 }
+
+/* Hero section with full-width iamge and heading */
+.index-hero {    
+    position: relative;
+    background: url('../images/rafting.jpg') no-repeat center center/cover;
+    height: 60vh;
+    columns: var(--accent1-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* About section with two images and text */
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    background-color: var(--primary-color);
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.about-text h3 {
+    font-size: 1.5rem;
+    color: var(--accent2-color);
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: var(--accent1-color);
+}
+
+/* Services section with tow columns */
+.services {
+    display: grid;
+    grid-template-columns: repeat(2x 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: var(--primary-color);
+}
+
+.services-item {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services-item h3 {
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+}
+
+.services-item p {
+    font-size: 1rem;
+    color: var(--accent2-color);
+}
+
+/* Newsletter section styling */
+
+.newsletter {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    color: var(--accent1-color);
+}
+
+.newsletter p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--accent1-color);
+}
+
+.newsletter-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter-form label {
+    font-size: 1rem;
+    columns: var(--accent1-color);
+    text-align: left;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #B4CDE4;
+}
+
+.submit-button {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: var(--accent2-color);
+}
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
