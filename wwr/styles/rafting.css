@@ -350,7 +350,7 @@ footer p {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 40px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .about-item {
@@ -387,11 +387,11 @@ footer p {
     grid-template-columns: repeat(2x 1fr);
     gap: 20px;
     padding: 40px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .services-item {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -468,6 +468,110 @@ footer p {
     }
 
     .services {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Trips hero section */
+
+.trips-hero {
+    position: relative;
+    background: url('../images/rafting.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: var(--accent2-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trips-hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 10px;
+}
+
+.trips-hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+/* Trip overview section (three trip descriptions) */
+.trips-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+.trip-item {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-image {
+    width: 100%;
+    height: auto;
+}
+
+.trip-description {
+    padding: 20px;
+}
+
+.trip-description h3 {
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+}
+
+.trip-description p {
+    font-size: 1rem;
+    color: var(--accent2-color);
+}
+
+/* Trip table section styling */
+
+.trip-table {
+    padding: 40px;
+    background-origin: var(--primary-color);
+    text-align: center;
+}
+
+.trip-table h2 {
+    font-size: 2rem;
+    color: var(--accent1-color);
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #B4CDE4;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+td {
+    background-color: var(--primary-color);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .trips-overview {
         grid-template-columns: 1fr;
     }
 }
