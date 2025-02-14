@@ -316,7 +316,7 @@ footer p {
     position: relative;
     background: url('../images/rafting.jpg') no-repeat center center/cover;
     height: 60vh;
-    columns: var(--accent1-color);
+    color: var(--accent1-color);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -384,7 +384,7 @@ footer p {
 /* Services section with tow columns */
 .services {
     display: grid;
-    grid-template-columns: repeat(2x 1fr);
+    grid-template-columns: repeat(2fr 1fr);
     gap: 20px;
     padding: 40px;
     background-color: var(--secondary-color);
@@ -436,7 +436,7 @@ footer p {
 
 .newsletter-form label {
     font-size: 1rem;
-    columns: var(--accent1-color);
+    color: var(--accent1-color);
     text-align: left;
 }
 
