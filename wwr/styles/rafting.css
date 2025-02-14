@@ -384,7 +384,7 @@ footer p {
 /* Services section with tow columns */
 .services {
     display: grid;
-    grid-template-columns: repeat(2fr 1fr);
+    grid-template-columns: repeat(2 1fr);
     gap: 20px;
     padding: 40px;
     background-color: var(--secondary-color);
@@ -537,7 +537,7 @@ footer p {
 
 .trip-table {
     padding: 40px;
-    background-origin: var(--primary-color);
+    background-color: var(--primary-color);
     text-align: center;
 }
 
